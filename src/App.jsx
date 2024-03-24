@@ -2,20 +2,12 @@ import { React, useState } from 'react'
 import './App.css'
 import { Button } from 'antd'
 
-// This is a site that is intended as crypto scammer bait,
-// When they click the wallet button it blasts them with a loud noise and a fake FBI warning
-
-
-// <Button type="primary">Click to reveal wallet address</Button>
-
 function Scare() {
-  // Play a loud noise
   var audio = new Audio('/alert.mp3')
   audio.loop = true
   audio.volume = 1
   audio.play()
 
-  // Show a fake FBI warning image over the screen
   var warning = document.createElement("img")
   warning.src = "/fbi.png"
   warning.style.position = "fixed"
