@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cryptowallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cryptobutton {
+  position: relative;
+  right: 3rem;
+}
+
+/* Fading out gradient to the right for the text color */
+.cryptotext {
+  background: linear-gradient(to right, #f12711 10%, #f5af19 25%, transparent 40%);
+  background-size: 200% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 5s linear infinite;
+}
